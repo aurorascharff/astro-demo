@@ -1,0 +1,22 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+
+const items = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+  { name: "Integrations", url: "/integrations" },
+];
+---
+
+<nav class="flex flex-row gap-2">
+  {
+    items.map((item) => {
+      const isActive = item.url === pathname;
+      return (
+        <a href={item.url} class={isActive ? "text-white underline" : ""}>
+          {item.name}
+        </a>
+      );
+    })
+  }
+</nav>
