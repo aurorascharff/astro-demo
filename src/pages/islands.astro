@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ReactCounter from "../components/ReactCounter";
+import SvelteCounter from "../components/SvelteCounter.svelte";
+import DateTime from "../components/DateTime";
+---
+
+<Layout title="Integrations">
+  <h1>Islands</h1>
+  <div class="flex flex-row gap-10 h-[1000px]">
+    <div>
+      <h5>React counter</h5>
+      <ReactCounter client:visible />
+    </div>
+    <div>
+      <h5>Svelte counter</h5>
+      <SvelteCounter client:visible />
+    </div>
+  </div>
+  <DateTime client:visible />
+</Layout>

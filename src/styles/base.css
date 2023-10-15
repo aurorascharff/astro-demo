@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white p-10 grid place-items-center gap-10;
+  }
+
+  a {
+    @apply text-primary hover:underline hover:text-white;
+  }
+
+  button {
+    @apply text-background bg-white hover:bg-primary hover:underline px-2 py-1;
+  }
+
+  h1 {
+    @apply text-4xl text-primary;
+  }
+
+  h2 {
+    @apply text-3xl text-primary;
+  }
+
+  h3 {
+    @apply text-2xl text-primary;
+  }
+
+  h4 {
+    @apply text-xl ;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+}

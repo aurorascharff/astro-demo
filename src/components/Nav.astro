@@ -3,12 +3,14 @@ const pathname = new URL(Astro.request.url).pathname;
 
 const items = [
   { name: "Home", url: "/" },
-  { name: "About", url: "/about" },
-  { name: "Integrations", url: "/integrations" },
+  { name: "Islands", url: "/islands" },
+  { name: "Content", url: "/content" },
+  { name: "Sharing state", url: "/sharing-state" },
+  { name: "Images", url: "/images" },
 ];
 ---
 
-<nav class="flex flex-row gap-2">
+<nav class="flex flex-row gap-4">
   {
     items.map((item) => {
       const isActive = item.url === pathname;

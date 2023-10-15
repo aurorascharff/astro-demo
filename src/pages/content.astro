@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getEntry } from "astro:content";
+
+const post = await getEntry("blog", "example-post");
+const { Content } = await post.render();
+
+const {
+  data: { author, title },
+} = post;
+---
+
+<Layout title="Welcome to Astro">
+  <main class="flex flex-col gap-5">
+    <h1 class="text-white">{title}</h1>
+    <h3 class="text-white">Author: {author}</h3>
+    <Content />
+  </main>
+</Layout>

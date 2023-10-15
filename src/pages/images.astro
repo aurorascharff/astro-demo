@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import image from "../images/image.jpg";
+---
+
+<Layout title="Images">
+  <h1>Images</h1>
+  <p>
+    <Image src={image} height="600" alt="Large image" />
+  </p>
+</Layout>
