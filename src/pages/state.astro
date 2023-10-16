@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ReactCounterUseStore from "../components/ReactCounterUseStore";
+import ReactCounterSetStore from "../components/ReactCounterSetStore";
+---
+
+<Layout title="Integrations">
+  <h1>State</h1>
+  <div class="flex flex-col gap-10">
+    <div class="border p-5 flex gap-2 flex-col">
+      Use counter store React island
+      <ReactCounterUseStore client:load />
+    </div>
+    <div class="border p-5 flex gap-2 flex-col">
+      Set counter store React island
+      <ReactCounterSetStore client:load />
+    </div>
+  </div>
+</Layout>

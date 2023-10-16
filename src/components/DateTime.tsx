@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function DateTime() {
-  const [time, setTime] = useState();
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
     const interval = setInterval(() => {
