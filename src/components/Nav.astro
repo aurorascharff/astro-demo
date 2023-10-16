@@ -3,21 +3,20 @@ const pathname = new URL(Astro.request.url).pathname;
 
 const items = [
   { name: "Home", url: "/" },
-  { name: "Islands", url: "/islands" },
-  { name: "Content", url: "/content" },
-  { name: "State", url: "/state" },
-  { name: "Images", url: "/images" },
+  { name: "Islands", url: "/islands/" },
+  { name: "Content", url: "/content/" },
+  { name: "State", url: "/state/" },
+  { name: "Images", url: "/images/" },
 ];
 ---
 
 <nav class="flex flex-row gap-4">
-  {pathname}
   {
     items.map((item) => {
       const isActive = item.url === pathname;
       return (
         <a href={item.url} class={isActive ? "text-white underline" : ""}>
-          {item.url}
+          {item.name}
         </a>
       );
     })
