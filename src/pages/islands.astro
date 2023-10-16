@@ -7,13 +7,13 @@ import DateTime from "../components/DateTime";
 
 <Layout title="Integrations">
   <h1>Islands</h1>
-  <div class="flex flex-row gap-10 h-[1000px]">
-    <div>
-      <h5>React counter</h5>
+  <div class="flex flex-col gap-10 h-[1000px]">
+    <div class="border p-5 flex gap-2 flex-col h-fit">
+      <h5>React counter island</h5>
       <ReactCounter client:load />
     </div>
-    <div>
-      <h5>Svelte counter</h5>
+    <div class="border p-5 flex gap-2 flex-col h-fit">
+      <h5>Svelte counter island</h5>
       <SvelteCounter client:load />
     </div>
   </div>
