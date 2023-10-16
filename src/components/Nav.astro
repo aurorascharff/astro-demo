@@ -11,12 +11,13 @@ const items = [
 ---
 
 <nav class="flex flex-row gap-4">
+  {pathname}
   {
     items.map((item) => {
       const isActive = item.url === pathname;
       return (
         <a href={item.url} class={isActive ? "text-white underline" : ""}>
-          {item.name}
+          {item.url}
         </a>
       );
     })
