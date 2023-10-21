@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import ReactCounter from "../components/ReactCounter";
 import SvelteCounter from "../components/SvelteCounter.svelte";
 import DateTime from "../components/DateTime";
+import Confetti from "../components/Confetti";
 ---
 
 <Layout title="Integrations">
@@ -16,6 +17,7 @@ import DateTime from "../components/DateTime";
       Svelte counter island
       <SvelteCounter client:load />
     </div>
+    <Confetti client:idle />
   </div>
   <DateTime client:visible />
 </Layout>
