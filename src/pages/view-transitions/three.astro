@@ -1,0 +1,9 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import image from "../../images/trondheim.jpg";
+---
+
+<Layout title="View transitions">
+  <Image transition:name="three" src={image} alt="Large image" />
+</Layout>
