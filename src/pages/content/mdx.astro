@@ -1,8 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import { getEntry } from "astro:content";
 
-const post = await getEntry("blog", "example-post");
+const post = await getEntry("blog", "example-post-mdx");
 const { Content: PostContent } = await post.render();
 
 const {

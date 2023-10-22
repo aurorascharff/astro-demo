@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function ReactCounter() {
-  const [count, setCount] = React.useState(0);
+type Props = {
+  initialCount: number;
+};
+
+export default function ReactCounter({ initialCount = 0 }: Props) {
+  const [count, setCount] = useState(initialCount);
 
   return (
     <div className="flex flex-col gap-2">
