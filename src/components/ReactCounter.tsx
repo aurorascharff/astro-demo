@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 type Props = {
-  initialCount: number;
+  initialCount?: number;
 };
 
 export default function ReactCounter({ initialCount = 0 }: Props) {
