@@ -17,7 +17,7 @@
     "@nanostores/react": "^0.7.1",
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
-    "astro": "^3.3.0",
+    "astro": "^3.6.5",
     "nanostores": "^0.9.4",
     "react": "^18.2.0",
     "react-confetti-explosion": "^2.1.2",
